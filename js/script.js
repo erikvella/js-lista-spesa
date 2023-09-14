@@ -5,13 +5,15 @@
 
 
 
-
+const outputTag = document.getElementById('output');
 const listaSpesa = ['latte' , 'sale' , 'zucchero' , 'pane'];
 let i = 0;
 
 while(i < listaSpesa.length){
   console.log(listaSpesa[i]);
+  const element = listaSpesa[i];
   i++;
+  outputTag.innerHTML += `<li>${element}</li>` 
 }
 
 
